@@ -30,7 +30,7 @@
         </DataSetParameter>
       </DataSetParameters>
       <CommandType>StoredProcedure</CommandType>
-      <CommandText>spCRS_Scoring_Accounts</CommandText>
+      <CommandText>myProceedureName</CommandText>
     </Query>
     <Fields>
       <Field Name="Some Field">
