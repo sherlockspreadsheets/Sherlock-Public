@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>myDatabase</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@TimeFrame">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Int32</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@LotDesignation">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>AnsiString</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@StartDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>DateTime</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@EndDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>DateTime</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandType>StoredProcedure</CommandType>
+      <CommandText>spCRS_Scoring_Accounts</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="StartDate">
+        <DataField>StartDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="EndDate">
+        <DataField>EndDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="TimeFrameMsg">
+        <DataField>TimeFrameMsg</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DesgData">
+        <DataField>DesgData</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AgeAtSale">
+        <DataField>AgeAtSale</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="EmploymentMonths">
+        <DataField>EmploymentMonths</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="RecNoID">
+        <DataField>RecNoID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="PaymentRatio">
+        <DataField>PaymentRatio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="RiskModelSysID">
+        <DataField>RiskModelSysID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="TotalAccountsNof">
+        <DataField>TotalAccountsNof</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="PreviousCredit">
+        <DataField>PreviousCredit</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="BankAccount">
+        <DataField>BankAccount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CurrentAndPreviousLengthOfResidence">
+        <DataField>CurrentAndPreviousLengthOfResidence</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Trade">
+        <DataField>Trade</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Miles">
+        <DataField>Miles</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="FinancedRatio">
+        <DataField>FinancedRatio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CustomerName">
+        <DataField>CustomerName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AppID">
+        <DataField>AppID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AccountID">
+        <DataField>AccountID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Bankruptcy">
+        <DataField>Bankruptcy</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="LengthOfResidence">
+        <DataField>LengthOfResidence</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AgeOfVehicle">
+        <DataField>AgeOfVehicle</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="LoanOriginationDate">
+        <DataField>LoanOriginationDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="LotID">
+        <DataField>LotID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Score_BaseWeight">
+        <DataField>Score_BaseWeight</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_AgeAtSale">
+        <DataField>Score_AgeAtSale</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_BankAccount">
+        <DataField>Score_BankAccount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ApplicantRiskModelBaseScore">
+        <DataField>ApplicantRiskModelBaseScore</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_Bankruptcy">
+        <DataField>Score_Bankruptcy</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_CurrentAndPreviousLengthOfResidence">
+        <DataField>Score_CurrentAndPreviousLengthOfResidence</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="aBankAccount">
+        <DataField>aBankAccount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="aEmploymentMonths">
+        <DataField>aEmploymentMonths</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_EmploymentMonths">
+        <DataField>Score_EmploymentMonths</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="NumOfCarMartAccts">
+        <DataField>NumOfCarMartAccts</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_FinancedRatio">
+        <DataField>Score_FinancedRatio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CarMartRiskViewScore">
+        <DataField>CarMartRiskViewScore</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_Miles">
+        <DataField>Score_Miles</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_PaymentRatio">
+        <DataField>Score_PaymentRatio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SubjectAddrCount">
+        <DataField>SubjectAddrCount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AgeOldestRecord">
+        <DataField>AgeOldestRecord</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_PreviousCredit">
+        <DataField>Score_PreviousCredit</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_TotalAccounts">
+        <DataField>Score_TotalAccounts</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AddrChangeCount24">
+        <DataField>AddrChangeCount24</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="HighRiskCreditActivity">
+        <DataField>HighRiskCreditActivity</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_Trade">
+        <DataField>Score_Trade</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="LienSmallClaimsFiledCount">
+        <DataField>LienSmallClaimsFiledCount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_LengthOfResidence">
+        <DataField>Score_LengthOfResidence</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="DerogSeverityIndex">
+        <DataField>DerogSeverityIndex</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_AgeOfVehicle">
+        <DataField>Score_AgeOfVehicle</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="NonDerogCount24">
+        <DataField>NonDerogCount24</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_Final">
+        <DataField>Score_Final</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FinancialRiskModelBase">
+        <DataField>FinancialRiskModelBase</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="LotName">
+        <DataField>LotName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Pct_Seasonal1">
+        <DataField>Pct_Seasonal1</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Down_Pmt_Special_Ratio">
+        <DataField>Down_Pmt_Special_Ratio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="aPaymentRatio">
+        <DataField>aPaymentRatio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="aTrade">
+        <DataField>aTrade</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="aAutoAge">
+        <DataField>aAutoAge</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="VehicleMake">
+        <DataField>VehicleMake</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="VehicleType">
+        <DataField>VehicleType</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_ApplicantRiskModelBaseScore">
+        <DataField>Score_ApplicantRiskModelBaseScore</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_aBankAccount">
+        <DataField>Score_aBankAccount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_aEmploymentMonths">
+        <DataField>Score_aEmploymentMonths</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_NumOfCarMartAccts">
+        <DataField>Score_NumOfCarMartAccts</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_CarMartRiskViewScore">
+        <DataField>Score_CarMartRiskViewScore</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_SubjectAddrCount">
+        <DataField>Score_SubjectAddrCount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_AgeOldestRecord">
+        <DataField>Score_AgeOldestRecord</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_AddrChangeCount24">
+        <DataField>Score_AddrChangeCount24</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_HighRiskCreditActivity">
+        <DataField>Score_HighRiskCreditActivity</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_LienSmallClaimsFiledCount">
+        <DataField>Score_LienSmallClaimsFiledCount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_DerogSeverityIndex">
+        <DataField>Score_DerogSeverityIndex</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_NonDerogCount24">
+        <DataField>Score_NonDerogCount24</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_FinancialRiskModelBase">
+        <DataField>Score_FinancialRiskModelBase</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_Pct_Seasonal1">
+        <DataField>Score_Pct_Seasonal1</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_Down_Pmt_Special_Ratio">
+        <DataField>Score_Down_Pmt_Special_Ratio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_aPaymentRatio">
+        <DataField>Score_aPaymentRatio</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_aTrade">
+        <DataField>Score_aTrade</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_aAutoAge">
+        <DataField>Score_aAutoAge</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_VehicleMake">
+        <DataField>Score_VehicleMake</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Score_VehicleType">
+        <DataField>Score_VehicleType</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
