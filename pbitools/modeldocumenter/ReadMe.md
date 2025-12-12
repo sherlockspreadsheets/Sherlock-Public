@@ -11,7 +11,7 @@ Installer Directory:
 
 A) Run the installer
 
-ModelDocumenter.Installer_v2.1.0.msi
+*ModelDocumenter.Installer_v2.1.0.msi*
 This installer creates a PBI External tool plugin for Power BI Desktop. 
 
 B) Update 2 files using my own customizations, including custom visuals and insights created 
@@ -20,16 +20,16 @@ Update 2 files using PBIT customizations
 Both files to copy are located in PBI VC document library. To update the files you must enter EP account credentials.
 
 Copy File:
-ModelDocumentationTemplate_v2.1.0_(MCSA-Brian).pbit
+*ModelDocumentationTemplate_v2.1.0_(MCSA-Brian).pbit*
 * The changes made give us custom visuals and insights 
 Target Directory
- C:\Program Files (x86)\Common Files\Data-Marc\ModelDocumenter
+` C:\Program Files (x86)\Common Files\Data-Marc\ModelDocumenter`
 
 Copy File:
-Data-Marc_ModelDocumenter_v2.1.0.pbitool.json
+*Data-Marc_ModelDocumenter_v2.1.0.pbitool.json*
 * The changes made tells the PBI plugin to use the "Brian MCSA" template file, instead of the default template file
 Target Directory
- C:\Program Files (x86)\Common Files\microsoft shared\Power BI Desktop\External Tools
+` C:\Program Files (x86)\Common Files\microsoft shared\Power BI Desktop\External Tools`
 
 # Original Credit
 
