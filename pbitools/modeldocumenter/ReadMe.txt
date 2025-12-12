@@ -31,8 +31,15 @@ Data-Marc_ModelDocumenter_v2.1.0.pbitool.json
 Target Directory
  C:\Program Files (x86)\Common Files\microsoft shared\Power BI Desktop\External Tools
 
-# ORIGINAL CREDIT
+# Original Credit
 
 marclelijveld | External-Tools-Model-Documentation
 * The Github repo is the original creator and includes documentation to learn more about the tool, what an external tool is and a page-by-page explanation of the Model Documenter output. 
 https://github.com/marclelijveld/External-Tools-Model-Documentation
+
+# Disclaimer
+
+This template is shared openly to help Power BI developers better understand and document their data models.
+However, it is provided as-is, without official support, ongoing maintenance, or guarantees.
+Please review and validate all results before using them in critical environments.
+
